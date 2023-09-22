@@ -33,7 +33,7 @@ body {
 .cabecalho__menu__item{
     color: var(--cor--tercearia);
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
 }
@@ -41,12 +41,13 @@ body {
 .apresentacao{
     align-items: center;
     display: flex;
+    gap: 82px;
     justify-content: space-between;
     padding: 8% 12.5%;
 }
 
 .apresentacao__texto{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -54,7 +55,7 @@ body {
 
 .apresentacao__texto__titulo{
     font-family: var(--fonte-primaria);
-    font-size: 36px;
+    font-size: 2.25rem;
 }
 
 .apresentacao__texto__titulo--destaque{
@@ -63,7 +64,7 @@ body {
 
 .apresentacao__texto__descricao{
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .apresentacao__texto__descricao a {
@@ -81,7 +82,7 @@ body {
 
 .apresentacao__texto__divLink__texto{
     font-family: var(--fonte-primaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -95,19 +96,23 @@ body {
     color: var(--cor--secundaria);
     display: flex;
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     gap: 16px;
     justify-content: center;
     padding: 21.5px 0;
     text-align: center;
     text-decoration: none;
-    width: 378px;
+    width: 50%;
 }
 
 .apresentacao__texto__divLink__social:hover{
     background-color: var(--cor--hoverRede);
     cursor: pointer;
+}
+
+.apresentacao__imagem{
+    width: 50%;
 }
 
 .rodape{
@@ -118,7 +123,26 @@ body {
 .rodape__texto{
     color: var(--cor--primaria);
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
     font-weight: 400;
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 10% 0 0 0;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__texto{
+        width: auto;
+    }
 }
